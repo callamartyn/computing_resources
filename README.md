@@ -84,6 +84,7 @@ Next terminal
 Wynton instructions
 ===================
 Full instructions [here](https://ucsf-hpc.github.io/wynton/index.html)
+
 Create account
 --------------
 Anyone affiliated with UCSF can get a free Wynton account, but they won’t have high priority unless associated with a contributing lab. Follow the instructions [here](https://ucsf-hpc.github.io/wynton/about/join.html) to create an account.
