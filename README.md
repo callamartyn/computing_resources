@@ -254,6 +254,18 @@ $ wget <copied link>
 $ tar zxvpf ncbi-blast...tar.gz
 ```
 
+bedtools
+--------
+bedtools relies on zlib so you'll need to install that first . Go get the latest release [here] (http://zlib.net/). Copy the link for US(zlib.net)
+
+then from the data transfer node
+```wget http://zlib.net/zlib-1.2.11.tar.gz ```
+unpack
+```tar -xvzf zlib-1.2.11.tar.gz
+cd zlib-1.2.11/
+./configure
+make```
+
 Writing code and IDEs
 =====================
 Connecting Atom to remote server with atom-remote
