@@ -277,7 +277,8 @@ unpack
 ```tar -xvzf zlib-1.2.11.tar.gz
 cd zlib-1.2.11/
 ./configure
-make```
+make
+```
 
 Writing code and IDEs
 =====================
