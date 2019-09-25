@@ -205,7 +205,20 @@ The command to submit your job to the wynton scheduler is as follows, the full d
 ```
 $ qsub -cwd myscript.sh
 ```
+#### Bonus: Using conda environments in job submissions
+In order to make your environmental variables accessible you will need to add the -V flag to your submission. A sample script might look like this
 
+```
+#!/bin/bash
+#$ -N jobname
+#$ -cwd
+#$ -pe smp 4
+#$ -l mem_free=2G
+#$ -l h_rt=00:20:00
+#$ -V
+source activate env_name
+python script.py
+```
 Programs I have found useful and how to install them
 ===================================================
 SRA tools
