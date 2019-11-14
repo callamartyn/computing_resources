@@ -136,7 +136,7 @@ $ scp /path/to/source/file user@server.edu:~/path/to/destination/
 ```
 For wynton, you will want the destination to be the data transfer node wyndt
 ```
-$ scp /path/to/source/file user@wyndt1.compbio.ucsf.edu:~/
+$ scp /path/to/source/file user@dt1.wynton.ucsf.edu:~/
 ```
 You should always be transferring the data from your local drive, if you need to go the other way just reverse the order of the paths.
 
@@ -144,7 +144,7 @@ Setting up
 ----------
 Ssh into the data transfer node from the login node
 ```
-$ ssh wyndt1.compbio.ucsf.edu
+$ ssh dt1.wynton.ucsf.edu
 ```
 #### Install anaconda
 Download anaconda linux bash script from https://www.anaconda.com/distribution/  to your computer. Copy the script onto your linux account by running
