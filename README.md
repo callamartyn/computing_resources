@@ -206,7 +206,7 @@ The command to submit your job to the wynton scheduler is as follows, the full d
 $ qsub -cwd myscript.sh
 ```
 #### Bonus: Using conda environments in job submissions
-In order to make your environmental variables accessible you will need to add the -V flag to your submission. A sample script might look like this
+In order to make your environmental variables (like conda environments) accessible you will need to add the -V flag to your submission. A sample script might look like this
 
 ```
 #!/bin/bash
@@ -214,11 +214,16 @@ In order to make your environmental variables accessible you will need to add th
 #$ -cwd
 #$ -pe smp 4
 #$ -l mem_free=2G
-#$ -l h_rt=00:20:00
+#$ -l h_rt=01:00:00
 #$ -V
 source activate env_name
 python script.py
 ```
+
+-cwd runs the job from your current working directory
+-l is the estimated run time
+To run a job on multiple threads use -pe to specify number of cores and -l to specify RAM/core. In your script use $NSLOTS anywhere you would set the number of cores. 
+
 Programs I have found useful and how to install them
 ===================================================
 SRA tools
