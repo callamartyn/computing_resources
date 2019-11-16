@@ -149,7 +149,7 @@ $ ssh dt1.wynton.ucsf.edu
 #### Install anaconda
 Download anaconda linux bash script from https://www.anaconda.com/distribution/  to your computer. Copy the script onto your linux account by running
 ```
-$ scp /path/to/Anaconda3-2019.03-Linux-x86_64.sh <user>@wyndt1.compbio.ucsf.edu:~
+$ scp /path/to/Anaconda3-2019.03-Linux-x86_64.sh <user>@dt1.wynton.ucsf.edu:~
 ```
 Login to wynton, make the script executable (see below), then run script
 ```
@@ -160,7 +160,7 @@ $ ./Anaconda3-2019.03-Linux-x86_64.sh
 `/wynton/home/yourname/somedirectory`
 Be sure to change it to
 `$HOME/somedirectory`
-These directions also helpful https://www.digitalocean.com/community/tutorials/how-to-install-anaconda-on-ubuntu-18-04-quickstart
+[These directions] (https://www.digitalocean.com/community/tutorials/how-to-install-anaconda-on-ubuntu-18-04-quickstart) are also helpful
 If conda was not added to your path in the installation process run
 ```
 $ /path/to/anaconda3/bin/conda init
@@ -247,38 +247,7 @@ do
   ~/bin/sratoolkit.2.9.6-ubuntu64/bin/fastq-dump --split-files $run
 done
 ```
-IDSeq Command Line Interface
-----------------------------
-Install aws
 
-Install idseq cli
-```
-$ pip install git+https://github.com/chanzuckerberg/idseq-cli.git --user --upgrade
-```
-
-BLAST
------
-#### Installing on wynton
-Log into data transfer node (wyndt1.compbio.ucsf.edu)
-
-Copy link to linux tar.gz file from [here](ftp://ftp.ncbi.nlm.nih.gov/blast/executables/blast+/LATEST/)
-```
-$ wget <copied link>
-$ tar zxvpf ncbi-blast...tar.gz
-```
-
-bedtools
---------
-bedtools relies on zlib so you'll need to install that first . Go get the latest release [here] (http://zlib.net/). Copy the link for US(zlib.net)
-
-then from the data transfer node
-```wget http://zlib.net/zlib-1.2.11.tar.gz ```
-unpack
-```tar -xvzf zlib-1.2.11.tar.gz
-cd zlib-1.2.11/
-./configure
-make
-```
 
 Writing code and IDEs
 =====================
@@ -296,6 +265,14 @@ If you don’t have pip installed or want to use a different rmate (there is a v
 ```
 ssh -R 52698:localhost:52698 user@log1.wynton.ucsf.edu
 ```
+You may want to add this to your config file to avoid typing it out
+```
+Host wynt-r
+HostName log1.wynton.ucsf.edu
+User <user>
+RemoteForward 52698 localhost:52698
+```
+
 Open the file you want to edit in atom with
 ```
 $ rmate somefile.txt
