@@ -160,7 +160,7 @@ $ ./Anaconda3-2019.03-Linux-x86_64.sh
 `/wynton/home/yourname/somedirectory`
 Be sure to change it to
 `$HOME/somedirectory`
-[These directions] (https://www.digitalocean.com/community/tutorials/how-to-install-anaconda-on-ubuntu-18-04-quickstart) are also helpful
+[These directions](https://www.digitalocean.com/community/tutorials/how-to-install-anaconda-on-ubuntu-18-04-quickstart) are also helpful
 If conda was not added to your path in the installation process run
 ```
 $ /path/to/anaconda3/bin/conda init
