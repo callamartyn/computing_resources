@@ -221,8 +221,10 @@ python script.py
 ```
 
 -cwd runs the job from your current working directory
+
 -l is the estimated run time
-To run a job on multiple threads use -pe to specify number of cores and -l to specify RAM/core. In your script use $NSLOTS anywhere you would set the number of cores. 
+
+To run a job on multiple threads use -pe to specify number of cores and -l to specify RAM/core. In your script use $NSLOTS anywhere you would set the number of cores.
 
 Programs I have found useful and how to install them
 ===================================================
