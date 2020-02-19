@@ -226,6 +226,25 @@ python script.py
 
 To run a job on multiple threads use -pe to specify number of cores and -l to specify RAM/core. In your script use $NSLOTS anywhere you would set the number of cores.
 
+Managing Your Space
+-----------------------
+You are allocated 1000 GB of space in your home directory. To view how much space \
+you have remaining simply run
+
+```
+beegfs-ctl --getquota --storagepoolid=11 --uid <userid>
+```
+
+If, like me, you do not keep track of your usage and suddenly find you have hit \
+your quota you may want to find out what files to delete to free up some space. \
+Running
+
+```du -sh ./*```
+
+will show you how much space each file and directory in your current working directory \
+is taking up. You can add -r for recursive and change the path to view a different \
+directory
+
 Programs I have found useful and how to install them
 ===================================================
 SRA tools
