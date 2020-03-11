@@ -24,6 +24,9 @@ Courses
 -------
 UCSF [data science initiative](https://www.library.ucsf.edu/data-science/) offer regular free one and two day classes in R and Python, as well as open programming hours with pizza to go get help
 
+[Rosalind] (http://rosalind.info/problems/locations/) is a great way to learn python while working on biological problems
+
+
 Using the command line
 ======================
 Screens
@@ -242,7 +245,7 @@ Running
 ```du -sh ./*```
 
 will show you how much space each file and directory in your current working directory
-is taking up. You can add -r for recursive and change the path to view a different 
+is taking up. You can add -r for recursive and change the path to view a different
 directory
 
 Programs I have found useful and how to install them
