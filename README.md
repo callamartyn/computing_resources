@@ -24,11 +24,18 @@ Courses
 -------
 UCSF [data science initiative](https://www.library.ucsf.edu/data-science/) offer regular free one and two day classes in R and Python, as well as open programming hours with pizza to go get help
 
-[Rosalind] (http://rosalind.info/problems/locations/) is a great way to learn python while working on biological problems
+most of the classes are based on [software carpentry](https://software-carpentry.org/lessons/) material so if there are no classes coming up that's a good place to start
 
+[Rosalind](http://rosalind.info/problems/locations/) is a great way to learn python while working on biological problems
+
+[swirl](https://swirlstats.com/) is a nice way to learn R interactively 
 
 Using the command line
 ======================
+Unix/Linux
+-------
+check out the data science initiative or software carpentry (above) for some intro lessons or the small [tutorial](https://github.com/callamartyn/linux_tutorial) I put together
+
 Screens
 -------
 Screens are a super useful way to keep a file open in terminal while you run a program or to run a program in the background while you do something else
