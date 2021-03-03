@@ -260,7 +260,7 @@ Downloading Data
 To/From Box
 -----------
 
-First, set up a Box lftp password following [these instructions] (https://ucsf.app.box.com/services/box_ftp_server)
+First, set up a Box lftp password following [these instructions](https://ucsf.app.box.com/services/box_ftp_server)
 
 from wynton, log into a data transfer node
 ```
