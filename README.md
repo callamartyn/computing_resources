@@ -145,7 +145,7 @@ $ ssh wynton2
 #### Development
 If you need to test out some pieces of your script or test the whole thing on a small sample you can do so from a development node (no job submission required). From wynton type
 ```
-$ ssh qb3-dev1
+$ ssh dev1
 ```
 #### Data transfer
 To transfer data between any two locations use the following general format
