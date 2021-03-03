@@ -28,7 +28,7 @@ most of the classes are based on [software carpentry](https://software-carpentry
 
 [Rosalind](http://rosalind.info/problems/locations/) is a great way to learn python while working on biological problems
 
-[swirl](https://swirlstats.com/) is a nice way to learn R interactively 
+[swirl](https://swirlstats.com/) is a nice way to learn R interactively
 
 Using the command line
 ======================
@@ -255,8 +255,83 @@ will show you how much space each file and directory in your current working dir
 is taking up. You can add -r for recursive and change the path to view a different
 directory
 
-Programs I have found useful and how to install them
-===================================================
+Downloading Data
+================
+To/From Box
+-----------
+
+First, set up a Box lftp password following [these instructions] (https://ucsf.app.box.com/services/box_ftp_server)
+
+from wynton, log into a data transfer node
+```
+ssh dt1
+```
+
+access your box account using lftp
+```
+lftp --user <your.name>@ucsf.edu ftps://ftp.box.com
+Password:XXXXXXXXX <- UCSF Box lftp password NOT wynton password
+```
+
+to view the contents of your box directory
+```
+ls
+```
+
+to view the contents of your current wynton directory
+```
+!ls
+```
+
+to transfer individual files from box to wynton
+```
+get myfile.fasta .
+```
+
+you can also use wildcards
+```
+get *R1.fastq .
+```
+
+to transfer individual files from wynton to box
+```
+put ./myfile.fasta .
+```
+
+to copy an entire directory to wynton use mirror
+```
+mirror ./my_box_dir ./my_wynton_dir
+```
+
+to copy and directory from wynton to box
+```
+mirror --reverse ./my_wynton_dir ./my_box_dir
+```
+
+From AWS
+---------
+From wynton, log into a development node
+```
+ssh dev1
+```
+
+Then install the aws command line interface (you may wish to do this in a new conda environment)
+```
+conda install -c conda-forge awscli
+```
+
+One installed, run the aws shell script provided by the biohub or other collaborator. It will look something like
+
+```
+export AWS_ACCESS_KEY_ID=SOMEKEY
+export AWS_SECRET_ACCESS_KEY=sOmEkEy761
+export AWS_SESSION_TOKEN=s0meOtHeRletTTers0837
+aws s3 sync s3://czb-seqbot/fastqs/190530_M05295_0279_000000000-G43YR ./my_wynton_dir &
+```
+
+be sure to use the & or type "exit" before closing your connecting to put the download in the background
+
+
 SRA tools
 ----------
 #### Install SRA tools
