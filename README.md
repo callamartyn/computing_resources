@@ -20,6 +20,7 @@ R
 --
 [R studio](https://www.rstudio.com/products/rstudio/download/) is a helpful interactive version of R.
 
+
 Courses
 -------
 UCSF [data science initiative](https://www.library.ucsf.edu/data-science/) offer regular free one and two day classes in R and Python, as well as open programming hours with pizza to go get help
@@ -98,6 +99,13 @@ Full instructions [here](https://ucsf-hpc.github.io/wynton/index.html)
 Create account
 --------------
 Anyone affiliated with UCSF can get a free Wynton account, but they won’t have high priority unless associated with a contributing lab. Follow the instructions [here](https://ucsf-hpc.github.io/wynton/about/join.html) to create an account.
+
+Wynton Support
+--------------
+Wynton admins and other wynton users are very responsive on the [slack](https://join.slack.com/t/ucsf-wynton/signup) channel, it's a great place to troubleshoot problems or double check if what you are doing makes sense
+
+There is also a weekly office hour held by the wynton admins on Tuesdays from 11-noon, the zoom info is contained in the message-of-the-day when you log into wynton
+
 
 Understanding the nodes
 -----------------------
