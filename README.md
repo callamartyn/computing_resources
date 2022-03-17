@@ -1,23 +1,19 @@
 Formatting Your Data
 =============================
-aka how to make your data analyst happy
---------------------------------------
-Before you start analyzing your data in a programming language (and especially if you are handing your data off to someone else) there are few things you can do that will make your (or their) life easier. [This](./data_bad.xlsx) is a typical example of how you might format your data when you are just viewing it.
+Before you start analyzing your data in a programming language (or handing your data off to someone else) there are few things you can do that will make your life easier. [This](./data_bad.xlsx) is a typical example of how you might format your data when you are just viewing it.
 
 ![](./data_bad.png?raw=true)
 
-However, several aspects of this will be challenging if you want to work with the data in a programming language. Most analysis and plotting programs will require that your data be in "long form", meaning every variable is represented as a separate column and every observation (sample) is a row. To do this, merged cells and multi-layered headers should be converted to separate variables. Any information represented as formatting (cell colors, bold text, etc) should be converted to an explicit variable. If a variable does not apply to a given observation just leave the cell blank. [Here](./data_good.csv) is what the same data looks like when formatted as a long-form table.
+However, several aspects of this will be challenging if you want to work with the data in a programming language. Most analysis and plotting programs will require that your data be in "long form", meaning every variable is represented as a separate column and every observation (sample) is a row. To do this, merged cells and multi-layered headers should be converted to separate variables. Any information represented as formatting (cell colors, bold text, etc) should be converted to a variable. If a variable does not apply to a given observation, just leave the cell blank. [Here](./data_good.csv) is what the same data looks like when formatted as a long-form table.
 
 ![](./data_good.png?raw=true)
 
 Before importing your data into a program or sending it out for analysis, use the following checklist.
-
-Checklist
 1. all column names are unique
 2. column names do not contain spaces
 3. cell values do not contain commas or tabs
 4. cells are not merged
-4. file is .csv or .tsv
+5. file is .csv or .tsv
 
 General programming resources
 =============================
