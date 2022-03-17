@@ -8,7 +8,7 @@ Before you start analyzing your data in a programming language (and especially i
 
 However, several aspects of this will be challenging if you want to work with the data in a programming language. Most analysis and plotting programs will require that your data be in "long form", meaning every variable is represented as a separate column and every observation (sample) is a row. To do this, merged cells and multi-layered headers should be converted to separate variables. Any information represented as formatting (cell colors, bold text, etc) should be converted to an explicit variable. If a variable does not apply to a given observation just leave the cell blank. Here is what the same data looks like when formatted as a long-form table.
 
-[](./data_good.png?raw=true)
+[](./data_bad.png?raw=true)
 
 Before importing your data into a program or sending it out for analysis, use the following checklist.
 
